@@ -1,0 +1,39 @@
+.accordion {
+  margin: 2rem auto;
+}
+
+.accordion-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  cursor: pointer;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  text-transform: none;
+}
+
+.accordion-button,
+.accordion-content {
+  padding: 0;
+}
+
+.accordion-title,
+.accordion-icon {
+  align-self: center;
+}
+
+.accordion-icon {
+  display: flex;
+  align-items: baseline;
+  margin-top: 0.2rem;
+}
+
+.accordion-subtitle {
+  margin-right: 1rem;
+}
+
+.icon-style {
+  margin: 1rem;
+}

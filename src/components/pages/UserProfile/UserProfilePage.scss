@@ -1,0 +1,120 @@
+@use "../../../assets/scss/base/variables";
+
+.main-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .Non-edit{
+    max-width: 1280px;
+    width: 60%;
+    margin: 0% 20%;
+  }
+  .edit{
+    max-width: 1280px;
+    width: 60%;
+    margin: 0% 20%;
+  }
+
+  .main-title {
+    color: variables.$color-black;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    font-weight: 500;
+    border-bottom: 2px dotted variables.$color-grey-light-2;
+  }
+
+  .personal-details-title-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .personal-details-title {
+      font-weight: 400;
+    }
+
+    .personal-details-edit {
+      font-weight: 400;
+      text-decoration: underline;
+      cursor: pointer;
+      padding: 3px 1rem 0 0;
+      border: none;
+    }
+  }
+  .personal-details-content {
+    color: variables.$font-color;
+    padding-bottom: 2rem;
+    border-bottom: 2px dotted variables.$color-grey-light-2;
+    font-size: 1.2rem;
+
+    .personal-details {
+      padding: 1rem 0;
+    }
+    .fields_container {
+      margin-bottom: 2.6rem;
+      .input-box{
+        font-size: 2rem;
+      }
+      .label {
+          margin:2.5rem 0 0.5rem 0;
+      }
+      .w-100 {
+          width: 100%;
+      } 
+      .default_input_style {
+          margin-bottom: 0;
+          border-radius: 0;
+        }
+        .input-box-container {
+          .input-box-error {
+              border-bottom: 0.1rem solid variables.$color-red;
+          }
+        }
+        .error-message {
+            color: variables.$color-red;
+            font-size: 1.2rem;
+        }
+      }
+      .name {
+        display: flex;
+        justify-content: start;
+        
+        .last {
+          width: 50%;
+          margin-left: 10rem;
+        }
+        .first {
+          width: 50%;
+        }
+      
+        
+    }
+    .personal-details-password {
+      color: variables.$font-color;
+      padding: 2rem 0;
+      border-bottom: 2px dotted variables.$color-grey-light-2;
+      font-size: 1.2rem;
+
+    }
+    
+    .data {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .save {
+      margin: 4rem 0;
+      padding: 3rem;
+    }
+
+  }
+  
+  .password{
+    padding-bottom: 2rem;
+  }
+  }
+  
+ 
+
+
+

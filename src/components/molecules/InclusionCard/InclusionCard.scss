@@ -1,0 +1,24 @@
+@use "../../../assets/scss/base/variables";
+
+.inclusion-card {
+  border: 1px solid;
+  min-width: 18rem;
+  padding: 3rem 1rem;
+  margin-right: 2rem;
+  max-width: 20rem;
+  min-height: 18rem;
+
+  img {
+    width: auto;
+  }
+  &-title {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: variables.$color-primary;
+  }
+
+  @media (#{variables.$bp-larger-than-phablet}) {
+    border: 0;
+    min-height: auto;
+  }
+}

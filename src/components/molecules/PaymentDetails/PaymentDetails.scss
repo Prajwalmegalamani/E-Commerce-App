@@ -1,0 +1,71 @@
+@import "../../../assets/scss/base/variables";
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.payment-details {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 1rem;
+  margin: 1rem 2rem;
+  padding: 0.5rem;
+
+  @media ($bp-larger-than-tablet) {
+    align-items: baseline;
+  }
+
+  &__heading {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: $color-primary;
+  }
+}
+
+.gift-card {
+  display: flex;
+  justify-content: space-between;
+
+  @media ($bp-larger-than-tablet) {
+    gap: 1rem;
+  }
+}
+
+.card-details {
+  width: 100%;
+  display: flex;
+  padding-top: 2rem;
+  gap: 1rem;
+
+  // @media ($bp-larger-than-tablet) {
+  //   justify-content: center;
+  // }
+}
+
+.shipping-address {
+  display: flex;
+  flex-direction: column;
+
+  // @media ($bp-larger-than-tablet) {
+  //   align-items: center;
+  // }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    color: $color-grey-dark;
+
+    // @media ($bp-larger-than-tablet) {
+    //   align-items: center;
+    // }
+  }
+}
+
+.address {
+  padding-bottom: 1rem;
+}

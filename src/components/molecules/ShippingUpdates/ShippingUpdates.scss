@@ -1,0 +1,61 @@
+@import '../../../assets/scss/base/variables';
+
+
+@media ($bp-larger-than-phablet) {
+    .shipping-updates {
+
+        &-box {
+            background-color: $color-secondary;
+            width: 36rem;
+            padding: 4rem;
+
+            @media ($bp-larger-than-desktop) {
+                width: 46rem;
+            }
+
+            .heading {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 2rem;
+                line-height: 2rem;
+                color: $color-primary;
+                text-align: left;
+
+            }
+
+            .message {
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+
+                .notify {
+                    display: flex;
+                    gap: 1rem;
+                    align-items: left;
+
+                    &__message {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.5rem;
+                        line-height: 2rem;
+                        color: $color-primary;
+                        flex-basis: 80%;
+
+                        &-details {
+                            width: 85%;
+
+                            @media ($bp-larger-than-desktop) {
+                                width: 70%;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+}

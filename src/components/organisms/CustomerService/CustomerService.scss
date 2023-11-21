@@ -1,0 +1,270 @@
+@import "../../../assets/scss/base/variables";
+
+// Customer Service Section Styles
+.customer-service-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 200rem;
+  overflow-x: hidden;
+  margin: 2rem auto;
+  padding: 0 2rem;
+
+  .customer-service-image {
+    display: none;
+  }
+
+  .service-content {
+    margin: 0 auto;
+    width: 100%;
+
+    .service-header-section {
+
+      .heading,
+      .caption {
+        color: $color-grey-dark;
+        font-style: normal;
+        text-align: center;
+      }
+
+      .heading {
+        margin-bottom: 1rem;
+      }
+
+      .caption {
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+    }
+
+    .services {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+      margin: 0 auto;
+      width: 100%;
+
+      .service {
+        flex: 0 0 auto;
+        text-decoration: none;
+        color: $color-primary;
+        outline-offset: -1px;
+
+        .service-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #1b1c1e;
+          width: 146px;
+          height: 160px;
+
+          .left-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: inherit;
+            height: inherit;
+
+            .service-image-wrapper {
+              flex: 1;
+              display: inline-flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              align-items: center;
+            }
+
+            .service-description {
+              width: inherit;
+              flex: 1;
+
+              .service-text {
+                flex: 1;
+                margin-top: 1rem;
+                margin-bottom: 0;
+                font-weight: 400;
+                font-size: 1.5rem;
+                text-align: center;
+              }
+
+              .service-sub-text {
+                display: none;
+              }
+            }
+          }
+
+          .right-section {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  /* Larger than tablet */
+  @media (#{$bp-larger-than-tablet}) {
+    .service-content {
+      .services {
+        justify-content: center;
+      }
+    }
+  }
+
+  /* Larger than desktop */
+  @media (#{$bp-larger-than-desktop}) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .customer-service-image-container {
+      flex: 1;
+
+      .customer-service-image {
+        display: block;
+      }
+    }
+
+    .service-content {
+      flex: 1;
+      padding: 0 2rem;
+
+      .services {
+        flex-direction: column;
+
+        .service {
+          width: 80%;
+          display: flex;
+
+          .service-wrapper {
+            border: none;
+            border-bottom: 1px solid #cccccc;
+            width: 100%;
+            height: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 2rem 1rem;
+
+            &:hover {
+              .right-section {
+                .right-arrow {
+                  transform: translate3d(5px, 0, 0);
+                }
+              }
+            }
+
+            .left-section {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+              flex: 1;
+              width: auto;
+              height: auto;
+
+              .service-image-wrapper {
+                flex: none;
+                margin-right: 0.5rem;
+
+                .service-image {
+                  width: 48px;
+                  height: 48px;
+                }
+              }
+
+              .service-description {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .service-text,
+                .service-sub-text {
+                  margin: 0 0 0 1rem;
+                }
+
+                .service-sub-text {
+                  display: flex;
+                  color: $color-grey-dark;
+                }
+              }
+            }
+
+            .right-section {
+              display: block;
+
+              .right-arrow {
+                transition: transform 0.3s ease;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Larger than desktop HD */
+  @media (#{$bp-larger-than-desktophd}) {
+    justify-content: space-evenly;
+
+    .customer-service-image-container {
+      flex: none;
+
+      .customer-service-image {
+        max-width: 510px;
+      }
+    }
+
+    .service-content {
+      flex: none;
+      width: auto;
+      margin: 0;
+
+      .services {
+        .service {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Customer Service Detail Styles
+.customer-service-detail-section {
+  .header-wrapper {
+    background-color: $color-grey-light-4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    .main-heading {
+      text-transform: capitalize;
+      padding: 4rem 1rem;
+    }
+
+    .sub-heading {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .main-content {
+    padding: 4rem 2rem;
+
+    .content-section {
+      margin-bottom: 2rem;
+
+      .sub-heading {
+        font-size: 3.6rem;
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

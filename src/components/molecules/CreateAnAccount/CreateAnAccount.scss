@@ -1,0 +1,27 @@
+@import '../../../assets/scss/base/variables';
+
+
+@media ($bp-larger-than-phablet) {
+    .create-acc {
+        background-color: white;
+        width: 36rem;
+        padding: 4rem;
+
+        @media ($bp-larger-than-desktop) {
+            width: 46rem;
+        }
+
+        .heading {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 2rem;
+            line-height: 2rem;
+            color: $color-primary;
+            text-align: left;
+            align-items: left;
+
+        }
+
+
+    }
+}

@@ -1,0 +1,40 @@
+@use "../../../assets/scss/base/variables";
+
+.purchase-includes {
+  text-align: center;
+
+  h3{
+    font-size: 2.4rem;
+    color: variables.$color-primary;
+  }
+  .items {
+    display: flex;
+  }
+  .description {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .inclusion-card img {
+    width: auto;
+  }
+  @media (#{variables.$bp-larger-than-mobile}) {
+    .items {
+      justify-content: center;
+    }
+    .description {
+      width: 100%;
+      margin: 0 auto 2.5rem;
+    }
+  }
+
+  @media (#{variables.$bp-larger-than-tablet}) {
+    .description {
+      width: 55rem;
+      margin: 0 auto 3rem;
+    }
+
+    h3{
+      font-size: 3rem;
+    }
+  }
+}

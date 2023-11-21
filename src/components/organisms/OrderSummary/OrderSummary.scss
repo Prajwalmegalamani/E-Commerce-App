@@ -1,0 +1,193 @@
+@use "../../../assets/scss/base/variables";
+
+.order-summary {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  border-bottom: 0.1rem solid variables.$color-grey-light-3 ;
+
+}
+
+.order-summary-padding {
+  padding: 1rem;
+}
+
+.promo-button {
+  border: 0;
+  background-color: inherit;
+  font-size: 1.3rem;
+  text-transform: none;
+  margin-bottom: 0;
+}
+
+.promocode {
+  color: variables.$color-grey-dark;
+  font-size: variables.$font-size-lg;
+  flex: 2;
+
+  input {
+    &[type="text"].default_input_style {
+      border-bottom: none;
+    }
+  }
+}
+
+.order-total {
+  display: flex;
+  flex-direction: row;
+  color: variables.$color-grey-dark;
+  font-size: variables.$font-size-lg;
+  padding: 1.5rem;
+}
+
+.order-subtotal {
+  flex: 3;
+}
+
+.total {
+  color: variables.$color-primary;
+}
+
+hr {
+  margin-top: 0;
+}
+
+.promo-discount {
+  color: variables.$color-demonic;
+}
+
+.info-icon {
+  vertical-align: middle;
+}
+
+.promo-error {
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: variables.$color-demonic;
+}
+
+input.promo-input {
+  background: inherit;
+  padding-right: 6rem;
+  border: 0;
+  margin: 0;
+}
+
+.checkout,
+.checkout-apple,
+.checkout-paypal {
+  width: 90%;
+  max-width: 40rem;
+  border-radius: 0;
+}
+
+.button-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-apple {
+  font-size: 4.5rem;
+  margin: 1rem;
+}
+
+.bs-paypal {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.order {
+  background: variables.$color-grey-light;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .order-summary-compliment {
+    display: none;
+  }
+
+  .tumi-member {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .order-summary-text {
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0;
+    color: variables.$color-grey-dark;
+  }
+
+  .order-summary-compliment {
+    padding: 1rem;
+    margin: 0;
+    color: variables.$color-grey-dark;
+    font-size: variables.$font-size-lg;
+  }
+
+  .order {
+    flex: auto;
+    padding: 1rem;
+  }
+
+  .tumi-member {
+    p {
+      padding: 0.5rem;
+      margin: 0;
+    }
+
+    line-height: 2.6rem;
+    padding-bottom: 2.6rem;
+  }
+
+  .signin {
+    text-decoration: underline;
+  }
+
+  .signup {
+    text-decoration: underline;
+  }
+
+  .checkout {
+    background: variables.$color-primary;
+    color: variables.$color-secondary;
+  }
+
+  .checkout,
+  .checkout-apple,
+  .checkout-paypal {
+    width: 22rem;
+  }
+
+  .checkout:hover {
+    color: variables.$color-secondary;
+  }
+
+  .button-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3rem
+  }
+
+  .fa-text {
+    vertical-align: top;
+  }
+
+  .bs-text {
+    vertical-align: top;
+  }
+
+  .continue-shopping {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+  .part-payment {
+    margin-top: 1rem;
+    font-size: variables.$font-size-md;
+  }
+}

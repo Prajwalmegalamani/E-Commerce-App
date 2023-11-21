@@ -1,0 +1,7 @@
+@use "../../../assets/scss/base/variables";
+
+.divider{
+  height: 1px;
+  background: variables.$color-grey-light-1;
+  margin-bottom: 1.2rem;
+}

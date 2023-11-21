@@ -1,0 +1,105 @@
+@use "../../../assets/scss/base/variables";
+
+.select-box--container {
+
+  @media (#{variables.$bp-larger-than-mobile}) {
+    width: 20rem;
+    display: flex;
+    justify-content: end;
+  }
+
+  button {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0 0.3rem;
+    position: relative;
+    text-align: left;
+    color: variables.$color-primary;
+    font-size: 1.4rem;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 111;
+    background: variables.$color-secondary;
+    padding: 2.2rem 1.6rem;
+    background-color: variables.$color-secondary;
+    box-shadow: 0 0.3rem 0.6rem rgb(0, 0, 0, 0.1);
+    display: none;
+
+    ul.options {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      padding: 1.2rem;
+      margin-top: -4px;
+      width: inherit;
+      max-height: 85vh;
+      overflow-x: auto;
+      gap: 3rem;
+    }
+
+    .option-label {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-gap: 1rem;
+      cursor: pointer;
+
+      &:active {
+        border: 1px dotted;
+      }
+    }
+
+    .option-radio {
+      margin-bottom: 0;
+    }
+  }
+
+  .dropdown-content.show {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  // Larger than tablet
+  @media (#{variables.$bp-larger-than-tablet}) {
+    .dropdown-content {
+      position: absolute;
+      z-index: auto;
+      width: inherit;
+      height: auto;
+      top: 8rem;
+      left: auto;
+      padding: 0;
+      .sorting-mobile-content {
+        display: none;
+      }
+      ul {
+        gap: 2.6rem;
+      }
+    }
+  }
+}
+
+.select-box-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.sortby-arrow {
+  margin: 0.225rem 0.2rem;
+}

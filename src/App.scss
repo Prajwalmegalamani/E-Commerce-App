@@ -1,0 +1,12 @@
+*:focus,
+:focus-visible {
+  outline: 1px dashed #1b1c1e;
+}
+
+.lock-scroll {
+  overflow: hidden;
+}
+
+#maincontent {
+  margin-top: 8.5rem;
+}

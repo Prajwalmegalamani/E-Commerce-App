@@ -1,0 +1,41 @@
+@use "../../../assets/scss/base/variables";
+
+.product-page-wraper {
+  margin-top: 10rem;
+
+  .separator {
+    margin: 0;
+  }
+
+  .filter-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .filter-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .listing-header {
+    font-size: variables.$font-size-2xl;
+    text-transform: capitalize;
+
+    @media (#{variables.$bp-larger-than-tablet}) {
+      display: block;
+    }
+  }
+
+  @media (#{variables.$bp-larger-than-tablet}) {
+    .filter-section {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      align-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.columns{
+  margin-left: 0;
+}

@@ -1,0 +1,18 @@
+@use "../../../assets/scss/base/variables";
+
+.product-details {
+  color: variables.$color-grey-dark;
+  .img-grid {
+    display: none;
+  }
+  @media (#{variables.$bp-larger-than-mobile}) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (#{variables.$bp-larger-than-phablet}) {
+    .img-grid {
+      display: block;
+    }
+  }
+}

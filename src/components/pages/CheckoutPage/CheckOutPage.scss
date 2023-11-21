@@ -1,0 +1,70 @@
+@use "../../../assets/scss/base/variables";
+
+.empty-page {
+    height: 100vh;
+}
+
+.box-center {
+    display: flex;
+    justify-content: center;
+}
+
+.align-center {
+    max-width: variables.$container-width;
+}
+
+.space-between {
+    margin: 2rem 0;
+    border-bottom: .4rem solid variables.$color-grey-light;
+}
+
+.text-size-title {
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 2.4rem;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 1rem;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.mobile-order-summary {
+    display: contents;
+}
+
+.desktop-order-summary {
+    display: none;
+}
+
+.checkout-form-display {
+    display: flex;
+}
+
+.form-section {
+    width: 100%;
+    padding: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+    .mobile-order-summary {
+        display: none;
+    }
+
+    .desktop-order-summary {
+        display: contents;
+    }
+
+    .checkout-form-display {
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+    }
+
+    .form-section {
+        padding: 5rem;
+    }
+
+}

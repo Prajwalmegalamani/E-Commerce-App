@@ -1,0 +1,81 @@
+/* Toggle Switch Specific Styles Start */
+@use "../../../assets/scss/base/variables";
+
+input[type="checkbox"].default_checkbox {
+  display: inline-block;
+  position: relative;
+  accent-color: variables.$color-black;
+  width: 2rem;
+  height: 2rem;
+  border: 0.1rem solid variables.$color-black;
+  appearance: none;
+  cursor: pointer;
+  transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 0.6rem;
+    width: 0.6rem;
+    height: 1.4rem;
+    top: 0.1rem;
+    border-style: solid;
+    border-color: variables.$color-black;
+    border-width: 0 0.2rem 0.2rem 0;
+    transform: rotate(48deg);
+    opacity: 0;
+  }
+
+  &:checked {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+input[type="checkbox"].toggle_switch {
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 4.5rem;
+  height: 2.4rem;
+  background: variables.$color-secondary;
+  border-radius: 3em;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="checkbox"].toggle_switch:checked {
+  background: variables.$color-primary;
+  border: 0.1rem solid variables.$color-secondary;
+
+  &::before {
+    opacity: 0;
+  }
+}
+
+input[type="checkbox"].toggle_switch:after {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  z-index: 1;
+  content: "";
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: variables.$color-secondary;
+  -webkit-box-shadow: 0 0 0.25em rgba(variables.$color-black, 0.3);
+  box-shadow: 0 0 0.25em rgba(variables.$color-black, 0.3);
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="checkbox"].toggle_switch:checked:after {
+  left: 2.4rem;
+}

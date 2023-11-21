@@ -1,0 +1,84 @@
+@use "../../../assets/scss/base/_variables.scss";
+
+.filter-list-wrapper {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 18rem;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 111;
+  padding: 2.2rem;
+  background-color: variables.$color-secondary;
+  overflow-y: scroll;
+
+  .filter-mobile-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    span,
+    button {
+      font-size: variables.$font-size-2xl;
+    }
+  }
+
+  .filter-list {
+    width: 100%;
+    margin: 3rem auto;
+    button {
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  .close-btn {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  .filter-footer {
+    display: block;
+    button {
+      width: 100%;
+    }
+    .clear-btn {
+      border: 0;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.default_checkbox {
+  color: aqua;
+}
+
+// Larger than tablet
+@media (#{variables.$bp-larger-than-tablet}) {
+  .filter-list-wrapper {
+    max-width: fit-content;
+    position: static;
+    overflow-y: hidden;
+    padding-left: 0;
+
+    .filter-mobile-content {
+      display: none;
+      margin-top: 0;
+    }
+
+    .filter-list {
+      margin: 1rem auto;
+    }
+
+    .filter-footer {
+      display: none;
+    }
+  }
+}

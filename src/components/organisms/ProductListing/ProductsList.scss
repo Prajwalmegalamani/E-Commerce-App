@@ -1,0 +1,47 @@
+@use "../../../assets/scss/base/variables";
+
+.container{
+  padding: 0 3rem;
+  @media (#{variables.$bp-larger-than-mobile}) {
+    padding: 0;
+  }
+
+  @media (#{variables.$bp-larger-than-phablet}) {
+    width: 90%;
+  }
+
+  @media (#{variables.$bp-larger-than-tablet}) {
+    padding: 0 3rem;
+    width: 100%;
+  }
+
+  @media (#{variables.$bp-larger-than-desktop}) {
+    padding: 0;
+    width: 90%;
+  }
+
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .products-count {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: variables.$color-primary;
+
+    @media (#{variables.$bp-larger-than-tablet}) {
+      font-size: 1.5rem;
+    }
+  }
+  @media (#{variables.$bp-larger-than-phablet}) {
+    justify-content: left;
+  }
+}
+.products-section {
+  text-align: left;
+}

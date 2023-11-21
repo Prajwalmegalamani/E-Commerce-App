@@ -1,0 +1,12 @@
+@use "../../../assets/scss/base/variables";
+
+.default_link {
+  display: inline-block;
+  text-decoration: none;
+  &:active {
+    transform: scaleY(0.95);
+  }
+}
+.link-white{
+  color: variables.$color-secondary;
+}

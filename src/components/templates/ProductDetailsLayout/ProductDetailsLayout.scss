@@ -1,0 +1,48 @@
+@use "../../../assets/scss/base/variables";
+
+.product-details-layout {
+  color: variables.$color-grey-dark;
+  display: flex;
+  flex-direction: column;
+  .product-information {
+    margin-top: 3.1rem;
+  }
+  .product-inclusion {
+    margin: 6rem 0;
+  }
+  .product-suggestion {
+    margin-bottom: 6rem;
+  }
+  @media (#{variables.$bp-larger-than-mobile}) {
+
+    .product-information {
+      margin-top: 2.8rem;
+    }
+
+  }
+
+  @media (#{variables.$bp-larger-than-phablet}) {
+
+    padding: 1.9rem 0;
+    .img-carousel {
+      display: none;
+    }
+
+    .container {
+      width: 90%;
+    }
+
+  }
+
+  @media (#{variables.$bp-larger-than-tablet}) {
+    padding: 1.9rem 0;
+
+    .container{
+      padding: 0;
+    }
+  }
+
+  @media (#{variables.$bp-larger-than-desktop}) {
+    padding: 1.9rem 0;
+  }
+}

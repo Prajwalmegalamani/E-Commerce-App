@@ -1,0 +1,13 @@
+@use "../../../assets/scss/base/variables";
+
+.default_radio {
+  box-sizing: border-box;
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 0.1rem solid variables.$color-primary;
+
+  &:checked {
+    box-sizing: border-box;
+    accent-color: variables.$color-primary;
+  }
+}

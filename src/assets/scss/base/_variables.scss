@@ -1,0 +1,60 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+$bp-larger-than-mobile: "min-width: 400px" !default;
+$bp-larger-than-phablet: "min-width: 550px" !default;
+$bp-larger-than-tablet: "min-width: 750px" !default;
+$bp-larger-than-desktop: "min-width: 1000px" !default;
+$bp-larger-than-desktophd: "min-width: 1200px" !default;
+
+// Colors
+$light-grey: #e1e1e1 !default;
+$dark-grey: #333 !default;
+$primary-color: #33c3f0 !default;
+$secondary-color: lighten($dark-grey, 13.5%) !default;
+$border-color: #bbb !default;
+$link-color: #1eaedb !default;
+$font-color: #222 !default;
+//new
+$color-primary: #1b1c1e;
+$color-secondary: #ffffff;
+$color-background: #f5f5f5;
+$color-black: #000000;
+$color-grey-light: #f1f1f1;
+$color-grey-dark: #595959;
+$color-grey-light-1: #cccccc;
+$color-grey-light-2: #c4c4c4;
+$color-grey-light-3: #949494;
+$color-grey-light-4: #e9ecef;
+$color-grey-light-5: #fafafa;
+$color-demonic: #bb2131;
+$color-red: #f42837;
+$color-text-muted: #6c757d;
+
+// Typography
+$font-family: "Proxima Nova Regular", "HelveticaNeue", "Helvetica Neue",
+  Helvetica, Arial, sans-serif !default;
+//new
+$font-size-default: 0.9375rem;
+$font-size-sm: 0.875rem;
+$font-size-xs: 0.8125rem;
+$font-size-xxs: 0.75rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.5rem;
+$font-size-xl: 1.875rem;
+$font-size-2xl: 2.625rem;
+$font-size-3xl: 3.375rem;
+
+//Grid Variables
+$container-width: 1280px !default;
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: calc(
+  100 / $total-columns
+) !default; // calculates individual column width based off of # of columns
+$column-margin: 4% !default; // space between columns
+
+// Misc
+$global-radius: 4px !default;

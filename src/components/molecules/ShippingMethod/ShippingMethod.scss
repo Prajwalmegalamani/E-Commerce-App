@@ -1,0 +1,29 @@
+@use "../../../assets/scss/base/variables";
+
+.shipping-method-wrapper {
+  display: flex;
+  label {
+    margin-left: 1.5rem;
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+  p {
+    font-weight: normal;
+  }
+  .shipping-method {
+    color: variables.$color-primary;
+    font-weight: 600;
+  }
+  .shipping-address {
+    text-decoration: underline;
+    font-weight: lighter;
+    color: variables.$color-grey-dark;
+    font-style: normal;
+    margin-left: 0.5rem;
+  }
+  .address-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

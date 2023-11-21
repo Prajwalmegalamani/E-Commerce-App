@@ -1,0 +1,27 @@
+.images-grid-wrapper {
+  .overflow-slides {
+    overflow: hidden;
+  }
+  .slides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .slide {
+      width: 49%;
+      margin-bottom: 1rem;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .slide:nth-child(4n + 0),
+    .slide:first-child {
+      width: 100%;
+    }
+  }
+
+  button {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}

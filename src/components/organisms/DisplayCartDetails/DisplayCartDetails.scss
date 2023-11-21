@@ -1,0 +1,144 @@
+@use "../../../assets/scss/base/variables";
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-template-rows: 3fr auto;
+    margin: 0 2rem 2rem;
+}
+
+.edit-button {
+    display: flex;
+}
+
+.box-design {
+    border: 0.1rem solid variables.$color-primary;
+
+    .quantity-style {
+        padding: 0.1rem 1rem;
+        border-left: 0.1rem solid variables.$color-primary;
+        border-right: 0.1rem solid variables.$color-primary;
+    }
+}
+
+.edit-action-button {
+    max-height: 2.5rem;
+    width: 1rem;
+    margin: 0.1rem;
+    padding: 0 1.5rem;
+    border-radius: 0%;
+    border: 0;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.product-actions {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+
+    .monogram {
+        color: variables.$color-primary;
+        font-size: 1.3rem;
+    }
+
+    .action-allignment {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0 2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .underline-button {
+        text-underline-position: under;
+        border: none;
+        text-decoration: underline;
+        margin: 0;
+        padding: 0;
+    }
+
+    .add-remove-button {
+        display: flex;
+        justify-content: space-between;
+
+        .action-button {
+            width: 100%;
+            border-color: variables.$color-primary;
+            border-radius: 0;
+            margin: 0.5rem;
+            height: 5rem;
+        }
+    }
+}
+
+.image {
+    max-width: 14.4rem;
+    min-width: 14.4rem;
+    min-height: 17.4rem;
+    max-height: 17.4rem;
+}
+
+.prod-details {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem 2rem 2rem;
+
+    .underline-button {
+        width: fit-content;
+        border: none;
+        text-decoration: underline;
+        text-underline-position: under;
+        margin: 0;
+        padding: 0;
+    }
+
+    .price {
+        text-decoration: line-through;
+        color: variables.$color-grey-dark;
+        font-size: variables.$font-size-lg;
+    }
+
+    .brand-name {
+        color: variables.$color-grey-dark;
+        font-size: variables.$font-size-md;
+    }
+
+    .discount {
+        color: variables.$color-demonic;
+        font-size: 1.3rem;
+    }
+
+    .product-name {
+
+        &:hover {
+            color: variables.$color-primary;
+        }
+
+        text-decoration: none;
+        color: variables.$color-primary;
+        font-size: variables.$font-size-lg;
+    }
+
+    .color {
+        color: variables.$color-primary;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .content {
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+        grid-template-rows: 3fr auto;
+    }
+
+    .product-actions {
+        grid-column: 2/-1;
+        grid-row: 2/-1;
+
+        .action-allignment {
+            padding: 0 1rem 0 2rem;
+            margin: .5rem 0;
+        }
+    }
+}

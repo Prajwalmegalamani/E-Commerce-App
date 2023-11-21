@@ -1,0 +1,46 @@
+@import "../../../assets/scss/base/variables";
+
+.search {
+    &-icon-container {
+        position: absolute;
+        margin-top: 2rem;
+    }
+
+    &-text-container {
+        margin: 0;
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+
+        & .product-page-wraper {
+            margin-top: 5rem;
+        }
+
+        & .floating-label-wrap {
+            padding: 1rem;
+
+            & label {
+                font-size: 2rem;
+                padding-left: 2.5em;
+                padding-top: 0.935em;
+            }
+        }
+    }
+
+    &-input {
+        font-size: 1.8rem;
+        font-family: Kors Sans Book, Arial, sans-serif;
+        margin-left: 2.5rem;
+    }
+}
+
+#search-input {
+    color: $color-text-muted;
+    padding-right: 4.2rem;
+}
+
+// For devices larger than 400px
+@media (#{$bp-larger-than-tablet}) {
+    .search-input {
+        font-size: 2.6rem;
+    }
+}

@@ -1,0 +1,92 @@
+@use "../../../assets/scss/base/variables";
+
+$mobliePath : "../../../assets/images/hol22-giftguide-hphero-mobile-opt3.jfif";
+$desktopPath : "../../../assets/images/hol22-giftguide-hphero-desktop-opt3.jfif";
+
+.mainContainer{
+  display: flex;
+  margin: 0;
+
+  .heroHeaderImg {
+    width: 100%;
+    height: 70vh;
+    background: top/cover no-repeat url(#{$mobliePath});
+
+    @media (variables.$bp-larger-than-phablet) {
+      height: 100vh;
+      background: top/contain no-repeat url(#{$desktopPath});
+    }
+
+    @media (variables.$bp-larger-than-desktophd) {
+      height: 100vh;
+      background: top/cover no-repeat url(#{$desktopPath});
+    }
+}
+.heroContainer {
+  width: 100%;
+  max-width: 128rem;
+  display: flex;
+  margin: auto;
+
+
+    .heroHeaderContent {
+      width: 100%;
+      max-width: 128rem;
+      padding-top: 3rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      font-size: 4rem;
+      z-index: 3;
+      text-align: center;
+
+      @media (variables.$bp-larger-than-phablet) {
+        text-align: start;
+        padding-top: 10rem;
+        padding-left: 6rem;
+      }
+
+      .heroHeaderContentTitle {
+        font-size: 1.5rem;
+        margin-bottom: 2px;
+      }
+
+      .heroHeaderContentSubtitle {
+        font-size: 3rem;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        @media (variables.$bp-larger-than-phablet) {
+          font-size: 4rem;
+        }
+
+        span {
+          @media (variables.$bp-larger-than-phablet) {
+            display: block;
+          }
+        }
+      }
+
+      .heroHeaderDivButton {
+        display: inline-block;
+        padding: 1rem 6rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        border: 1px solid variables.$font-color;
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+
+        @media (variables.$bp-larger-than-phablet) {
+          margin-top: 2rem;
+          font-size: 2rem;
+          padding: 1rem 3rem;
+          margin-top: 2rem;
+        }
+
+        &:hover {
+          background: variables.$light-grey;
+        }
+      }
+    }
+  }
+}

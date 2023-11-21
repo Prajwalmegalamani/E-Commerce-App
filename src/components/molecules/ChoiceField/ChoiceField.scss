@@ -1,0 +1,27 @@
+@import "../../../assets/scss/base/variables";
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  .allign-icon {
+    margin-top: .6rem;
+  }
+
+  .label {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: $color-primary;
+
+    .label-text {
+      margin-left: 1rem;
+    }
+  }
+
+  .allign-label {
+    display: flex;
+    align-items: center;
+  }
+}

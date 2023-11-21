@@ -1,0 +1,15 @@
+@import "../../../assets/scss/base/variables";
+
+.options_card {
+  margin: 1rem 0 3rem 0;
+  display: grid;
+
+  @media (#{$bp-larger-than-phablet}) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .label {
+    display: flex;
+    align-items: center;
+  }
+}

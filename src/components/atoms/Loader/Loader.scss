@@ -1,0 +1,42 @@
+@use "../../../assets/scss/base/variables";
+
+.loader {
+  border: 0.5rem solid variables.$color-grey-light;
+  border-top-color: variables.$color-black;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  animation: spin 1s linear infinite;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  z-index: 20;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+}
+
+.overlay {
+  z-index: 10;
+  background: variables.$color-secondary;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  inset: 0;
+  opacity: 0.2;
+  backdrop-filter: blur(0.2rem);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

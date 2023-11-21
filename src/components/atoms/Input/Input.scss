@@ -1,0 +1,15 @@
+@use '../../../assets/scss/base/variables';
+
+input {
+  &[type="text"] {
+    &.default_input_style {
+      border: 0;
+      border-radius: 0;
+      border-bottom: 0.1rem solid variables.$color-grey-light-3 ;
+
+      ::placeholder {
+        color: variables.$color-grey-dark;
+      }
+    }
+  }
+}

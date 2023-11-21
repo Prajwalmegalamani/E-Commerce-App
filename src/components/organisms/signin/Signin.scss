@@ -1,0 +1,14 @@
+@use "../../../assets/scss/base/variables";
+
+.signin-btn {
+    width: 100%;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: variables.$color-secondary !important;
+    background-color: variables.$color-primary;
+    margin-top: 5rem;
+    text-align: center;
+}
+.error {
+    color: variables.$color-red;
+}

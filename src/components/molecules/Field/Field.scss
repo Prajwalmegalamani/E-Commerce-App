@@ -1,0 +1,69 @@
+@use "../../../assets/scss/base/variables";
+
+.floating-label-wrap {
+  position: relative;
+  margin: 3.5rem 0 0;
+  width: 100%;
+
+  input[type="text"].floating-label-field,
+  input[type="tel"].floating-label-field,
+  input[type="email"].floating-label-field,
+  input[type="password"].floating-label-field,
+  input[type="search"].floating-label-field,
+  select.floating-label-field {
+    width: 100%;
+    border: none;
+    border-bottom: 0.1rem solid variables.$color-grey-light-1;
+    border-radius: 0;
+    color: variables.$color-primary;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    &:focus {
+      box-shadow: 0;
+      border-color: variables.$color-black;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+
+    &.invalid {
+      border-color: variables.$color-demonic;
+    }
+
+    &+.floating-label {
+      position: absolute;
+      transition: all 0.2s;
+      top: -0.5em;
+      left: 0.6rem;
+      color: variables.$color-grey-dark;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      font-weight: 400;
+      transform-origin: 0 0;
+      opacity: 0.5;
+    }
+
+    &+.floating-label.required::before {
+      content: "* ";
+      color: variables.$color-demonic;
+    }
+
+    &:not(focus),
+    &:placeholder-shown {
+      &+.floating-label {
+        opacity: 0;
+      }
+    }
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      &+.floating-label {
+        opacity: 1;
+        transform: translate(1%, -60%) scale(0.8);
+        transition: all 0.2s;
+      }
+    }
+  }
+}

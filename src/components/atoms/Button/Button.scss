@@ -1,0 +1,40 @@
+@use "../../../assets/scss/base/variables";
+
+.default_empty {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: variables.$color-secondary;
+  color: variables.$color-primary;
+}
+
+.fill {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: variables.$color-primary;
+  color: variables.$color-secondary;
+
+  &:hover {
+    color: variables.$color-secondary;
+    border-color: lighten(variables.$color-secondary, 33.3%);
+  }
+  &:focus {
+    color: variables.$color-secondary;
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+}
+
+.icon {
+  height: auto;
+  padding: 0;
+  line-height: normal;
+  border: none;
+  font-size: 2.4rem;
+}

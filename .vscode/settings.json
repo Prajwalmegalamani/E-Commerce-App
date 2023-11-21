@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "liveServer.settings.port": 5501,
+    "cSpell.words": [
+        "formik",
+        "heroicons"
+    ]
+}

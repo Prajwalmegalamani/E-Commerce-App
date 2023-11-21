@@ -1,0 +1,24 @@
+@use "../../../assets/scss/base/variables";
+
+.images-wrapper {
+  img {
+    width: 100%;
+    height: 40rem;
+  }
+  .carousel-indicator {
+    background: variables.$color-grey-light-1;
+    width: 1.7rem;
+    height: 0.5rem;
+    display: inline-block;
+    margin: 0 0.8rem;
+  }
+  .carousel-indicator.active {
+    background: variables.$color-primary;
+  }
+
+  @media (#{variables.$bp-larger-than-mobile}) {
+    img {
+      height: auto;
+    }
+  }
+}

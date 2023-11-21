@@ -1,0 +1,94 @@
+@use "../../../assets/scss/base/variables";
+
+.registration {
+    &_container{
+        padding: 0 1.6rem 0 1.6rem;
+        
+    }
+    &_header {
+        font-size: 2.6rem;
+        font-weight: normal;
+        font-style: normal;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        
+        margin-bottom: 1.5rem;
+    }
+    &_msg {
+        margin-bottom: 0.5rem;
+        color: variables.$dark-grey;
+        p{
+            margin-bottom: 0;
+        }
+    }
+    &_form{
+        &_submitBtn {
+            width: 100%;
+        }
+        .dob {
+            display: flex;
+        }
+        .checkbox-container{
+            display: flex;
+            gap:1.2rem;
+            .checkbox-text {
+                font-size: 1.2rem;;
+            }
+        }
+        .fields_container {
+            margin-bottom: 2.6rem;
+            .label {
+                margin:2.5rem 0 0.5rem 0;
+            }
+            .w-100 {
+                width: 100%;
+            } 
+            .w-50 {
+                width: 50%;
+            }
+            .w-46 {
+                width: 46.6%;
+            }
+            .default_input_style {
+                margin-bottom: 0;
+                border-radius: 0;
+            }
+            .input-box-container {
+                .input-box-error {
+                    border-bottom: 0.1rem solid variables.$color-red;
+                }
+            }
+            .bday {
+                display: flex;
+                justify-content: space-between;
+                gap:1rem;
+    
+            }
+            .country_dropdown {
+                margin-bottom: 0;
+            }
+            .password-instructions {
+                font-size: 1.2rem;
+                color: variables.$color-grey-light-3;
+                margin-bottom: 2.1rem;
+                .password-tips{
+                    color:variables.$color-grey-light-3;
+                }
+            }
+            
+        }
+       
+        .error-message {
+            color: variables.$color-red;
+            font-size: 1.2rem;
+        }
+
+    }
+    @media only screen and (min-width: 768px){
+        &_container{
+            width: 48.3%;
+            padding: 0;
+        }
+    }
+}
+

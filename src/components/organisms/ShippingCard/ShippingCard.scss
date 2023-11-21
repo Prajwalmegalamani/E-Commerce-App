@@ -1,0 +1,12 @@
+@import "../../../assets/scss/base/variables";
+
+.card {
+  background: $color-secondary;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+
+  .padding-form {
+    padding: 0 3.5rem;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../../assets/scss/base/variables";
+
+.StandardGroundCard {
+  margin-top: 3rem;
+
+  a {
+    margin: 1rem 0;
+    display: block;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    color: $color-primary;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.standard-ground {
+  display: flex;
+  justify-content: space-between;
+
+  .radio-label {
+    display: flex;
+    gap: 1rem;
+
+    label {
+      font-weight: 400;
+    }
+  }
+
+  .text-muted {
+    color: $color-text-muted;
+    font-size: 1.5rem;
+  }
+
+  .displayName {
+    color: $color-primary;
+  }
+}

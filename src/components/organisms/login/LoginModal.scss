@@ -1,0 +1,213 @@
+@use "../../../assets/scss/base/variables";
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    overflow: hidden;
+    outline: 0;
+
+    &-dialog {
+        position: relative;
+        width: auto;
+        margin: .5rem;
+        pointer-events: none;
+    }
+
+    &-open {
+
+        #pageHeader::after {
+            background-color: variables.$color-primary;
+            opacity: .5;
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .modal {
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            &-content {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                pointer-events: auto;
+                background-color: variables.$color-secondary;
+                background-clip: padding-box;
+                border: 1px solid rgba(0, 0, 0, .2);
+                border-radius: .1875rem;
+                outline: 0;
+            }
+        }
+    }
+
+    &.show {
+        display: block;
+    }
+
+    .create-account-btn {
+        width: 100%;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+        color: variables.$color-secondary;
+        background-color: variables.$color-primary;
+        text-align: center;
+    }
+
+    .sign-in-column-container {
+        margin-top: 14px;
+        position: relative;
+    }
+}
+
+
+.global-modal {
+    .modal-content {
+        height: 100%;
+        border-radius: 0;
+        border: none;
+        overflow: auto;
+        padding: 28px 16px;
+    }
+
+    .modal-dialog {
+        position: fixed;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        right: 0;
+    }
+
+    &.fade.show .modal-dialog {
+        right: 0 !important;
+    }
+
+    &.fade .modal-dialog {
+        right: -650px;
+        transition: opacity 0.4s linear, right 0.4s ease-out;
+    }
+
+    .modal-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 0 1rem;
+        border-top-left-radius: .1875rem;
+        border-top-right-radius: .1875rem;
+    }
+}
+
+.fade {
+    transition: opacity 0.15s linear;
+}
+
+@media (min-width: 640px) {
+    .global-modal .modal-content {
+        padding: 28px 32px;
+    }
+
+    .global-modal .modal-dialog {
+        width: 439px;
+    }
+
+    .modal-dialog {
+        max-width: 500px;
+        margin: 1.75rem auto;
+    }
+}
+
+
+.create-account-btn a {
+    color: variables.$color-secondary;
+    text-decoration: none;
+}
+
+.create-account-section {
+    padding-bottom: 31px;
+}
+
+.h2-alt {
+    line-height: 1.4;
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.create-account-title,
+.sign-in-title {
+    font-size: 2.75rem;
+    text-transform: capitalize;
+    font-family: Kors Sans Light, Arial, sans-serif;
+    margin-bottom: 17px;
+}
+
+.create-account-sub-title,
+.sign-in-sub-title {
+    font-size: 1.2rem;
+    margin-bottom: 26px;
+    font-family: Kors Sans Book, Arial, sans-serif;
+    letter-spacing: .05em;
+    width: 100%;
+}
+
+.btn-close {
+    border: none;
+    padding: 0;
+}
+
+.user-profile {
+    text-align: center;
+    padding: 2rem;
+}
+
+.signin-section .login-container {
+    width: 100%;
+}
+
+.content-wrapper {
+    margin-bottom: 24px;
+}
+
+.menu-image {
+    margin-right: 20px;
+    height: 3.2rem;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.signed-in {
+    a {
+        font-size: 15px;
+        line-height: 15px;
+        -webkit-font-smoothing: antialiased;
+        font-family: proximanovasemibold, helvetica neue, Arial;
+        color: variables.$color-primary;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 20px !important;
+    }
+}
+
+
+.account-list {
+    border-bottom: 1px solid variables.$color-grey-light-1;
+}
+
+.welcome-user {
+    margin-bottom: 4rem;
+}
