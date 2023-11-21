@@ -1,3 +1,2 @@
-Read me file for E-commerce application.
-
-Add
+E-commerce application.
+Clone Micheal Kors and TUMI.
