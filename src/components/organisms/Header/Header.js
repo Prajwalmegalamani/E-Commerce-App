@@ -138,7 +138,9 @@ export default function Header() {
                               }}
                               to={`products/${category}`}
                               className={`darkMode-focus ${
-                                splitLocation[2] === category.toLowerCase()
+                                category &&
+                                category?.toLowerCase() &&
+                                splitLocation[2] === category?.toLowerCase()
                                   ? "active"
                                   : ""
                               }`}

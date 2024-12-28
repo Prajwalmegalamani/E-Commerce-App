@@ -10,13 +10,14 @@ export const MOCK_PRODUCTS = [
     stock: 94,
     brand: "Apple",
     category: "smartphones",
-    thumbnail: "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+    thumbnail:
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
     images: [
-      "https://i.dummyjson.com/data/products/1/1.jpg",
-      "https://i.dummyjson.com/data/products/1/2.jpg",
-      "https://i.dummyjson.com/data/products/1/3.jpg",
-      "https://i.dummyjson.com/data/products/1/4.jpg",
-      "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
     ],
   },
   {
@@ -30,12 +31,13 @@ export const MOCK_PRODUCTS = [
     stock: 34,
     brand: "Apple",
     category: "smartphones",
-    thumbnail: "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+    thumbnail:
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
     images: [
-      "https://i.dummyjson.com/data/products/2/1.jpg",
-      "https://i.dummyjson.com/data/products/2/2.jpg",
-      "https://i.dummyjson.com/data/products/2/3.jpg",
-      "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
     ],
   },
   {
@@ -49,8 +51,12 @@ export const MOCK_PRODUCTS = [
     stock: 36,
     brand: "Samsung",
     category: "smartphones",
-    thumbnail: "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-    images: ["https://i.dummyjson.com/data/products/3/1.jpg"],
+    thumbnail:
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+    images: [
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+      "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+    ],
   },
 ];
-

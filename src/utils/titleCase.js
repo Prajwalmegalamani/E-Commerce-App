@@ -1,6 +1,6 @@
 export function TitleCase(str) {
   return str
-    .toString()
+    ?.toString()
     .toLowerCase()
     .split(/[- ]+/)
     .map(function (word) {

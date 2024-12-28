@@ -143,24 +143,24 @@ export const state = [
   "Puducherry",
 ];
 export const sampleProducts = {
-  "id": 1,
-  "title": "iPhone 9",
-  "description": "An apple mobile which is nothing like apple",
-  "price": 549,
-  "discountPercentage": 12.96,
-  "rating": 4.69,
-  "stock": 94,
-  "brand": "Apple",
-  "category": "smartphones",
-  "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-  "images": [
-    "https://i.dummyjson.com/data/products/1/1.jpg",
-    "https://i.dummyjson.com/data/products/1/2.jpg",
-    "https://i.dummyjson.com/data/products/1/3.jpg",
-    "https://i.dummyjson.com/data/products/1/4.jpg",
-    "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-  ]
-}
+  id: 1,
+  title: "iPhone 9",
+  description: "An apple mobile which is nothing like apple",
+  price: 549,
+  discountPercentage: 12.96,
+  rating: 4.69,
+  stock: 94,
+  brand: "Apple",
+  category: "smartphones",
+  thumbnail:
+    "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+  images: [
+    "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+    "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+    "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+    "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+  ],
+};
 export const imageNotFound =
   "data:image/png;base64,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";
 export const imageURL1 =
